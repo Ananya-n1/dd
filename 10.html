@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylish Transition Example</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #ffecd2, #fcb69f);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .transition-box {
+            font-size: 20px;
+            padding: 30px 50px;
+            background-color: rgba(255, 255, 255, 0.7);
+            color: #333;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            transition: font-size 2s ease-in-out 0.2s, transform 0.5s ease;
+            cursor: pointer;
+            width: 300px;
+        }
+
+        .transition-box:hover {
+            font-size: 40px;
+            transform: scale(1.1);
+            background-color: #ff9a9e;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="transition-box">
+        Hey Pookie! 💌
+    </div>
+</body>
+</html>
